@@ -5,6 +5,11 @@ function countDown() {
   }
   
   countDown();
+  
+  const names = ["Sam", "Gilbert", "Alan"];
+  const eventName = "birthday";
+  const messages = writeCards(names, eventName);
+  
   function writeCards(names, eventName) {
     const thankYouMessages = [];
     for (let i = 0; i < names.length; i++) {
@@ -12,4 +17,6 @@ function countDown() {
     }
     return thankYouMessages;
   }
-  module.exports = { writeCards };
+  
+   console.log(messages); 
+  
